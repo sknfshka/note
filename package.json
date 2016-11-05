@@ -1,0 +1,31 @@
+{
+  "name": "Gulpstrap",
+  "version": "0.0.0",
+  "repository": "https://github.com/carlosl/gulpstrap.git",
+  "description": "Base gulp configuration with bootrap, jquery and nunjucks templating engine.",
+  "homepage": "https://github.com/carlosl/gulpstrap",
+  "license": "MIT",
+  "private": "true",
+  "dependencies": {
+    "gulp": "latest",
+    "gulp-util": "latest",
+    "gulp-bower": "latest",
+    "gulp-concat": "latest",
+    "gulp-uglify": "latest",
+    "gulp-less": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-nunjucks-render": "latest",
+    "gulp-newer": "latest",
+    "gulp-handlebars": "latest",
+    "gulp-declare": "latest",
+    "gulp-wrap": "latest",
+    "gulp-ftp": "latest",
+    "require-dir": "latest",
+    "browser-sync": "latest"
+  },
+  "devDependencies": {
+    "autoprefixer": "^5.1.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.1.0"
+  }
+}

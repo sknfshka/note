@@ -1,0 +1,25 @@
+{% set title = "Home" %}
+{% extends "src/views/templates/base.htm" %}
+{% block content %}
+<div class="wrapper">
+
+    <div id="filter">
+        <div id="filterEnter" contenteditable="true">Enter tag through gap</div>
+        <button id="submitFilter">filter</button>
+    </div>
+
+    <div class="content">
+        <ul id='recordsList'>
+        </ul>
+    </div>
+
+    <div id="enter">
+        <div id="textEnter" contenteditable="true"></div>
+        <button id="submitEnter">send</button>
+    </div>
+
+    <footer>
+    </footer>
+</div>
+
+{% endblock %}

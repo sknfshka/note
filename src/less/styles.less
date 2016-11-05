@@ -1,0 +1,155 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+.content
+{
+  width: 100%;
+  height: 100%;
+  padding: 5% 5%;
+  .note
+  {
+    margin-top: 3%;
+    width: 100%;
+    padding: 20px;
+    background-color: #aaaaaa;
+    position: relative;
+    .del
+    {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      color: #2a93b9;
+    }
+    .edit
+    {
+      position: absolute;
+      right: 10px;
+      top: 30px;
+      color: #2a93b9;
+      &.act
+      {
+        color: #1ccacd;
+        border: 1px solid #1ccacd;
+      }
+    }
+    p
+    {
+      padding: 0;
+      margin: 0;
+      word-wrap:break-word;
+      &.underline
+      {
+        border-bottom: 1px solid grey;
+      }
+      margin-bottom: 10px;
+    }
+    .smbl
+    {
+      float: left;
+    }
+    .newTagText
+    {
+      min-width: 30px;
+      border: 2px solid #2a93b9;
+      float: left;
+      height: 20px;
+    }
+    .addNewTag
+    {
+      float: left;
+      margin-right: 10px;
+      background-color: #2a93b9;
+      color: #1ccacd;
+      height: 20px;
+      width: 20px;
+      text-align: center;
+    }
+    .tagList{
+      float: left;
+      .tag
+      {
+        float: left;
+        background-color: #2a93b9;
+        margin-right: 5px;
+        .delTag
+        {
+          margin-left: 2px;
+          color: red;
+        }
+      }
+    }
+  }
+}
+#enter
+{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #e5e5e5;
+  padding: 8px;
+  #textEnter
+  {
+    background-color: #e5e5e5;
+    width: 80%;
+    margin-right: 3%;
+    border-bottom: 1px solid grey;
+    float: left;
+    color: grey
+  }
+  button
+  {
+    position: absolute;
+    top: 50%;
+    .translateY();
+    border: 1px solid grey;
+    background-color: transparent;
+    color: #2a93b9;
+    width: 17%;
+    z-index: 1;
+  }
+}
+.hashtag
+{
+  background-color: #2a93b9;
+}
+#filter
+{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: #e5e5e5;
+  padding: 8px;
+  #filterEnter
+  {
+    background-color: #e5e5e5;
+    width: 80%;
+    margin-right: 3%;
+    border-bottom: 1px solid grey;
+    float: left;
+    color: rgba(128, 128, 128, 0.5);
+    &:focus{
+      color: grey;
+    }
+  }
+  button
+  {
+    position: absolute;
+    top: 50%;
+    .translateY();
+    border: 1px solid grey;
+    background-color: transparent;
+    color: #2a93b9;
+    width: 17%;
+  }
+}
+.notActive
+{
+  display: none;
+}
+@import "responsive";

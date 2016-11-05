@@ -1,0 +1,6 @@
+{
+    "build_path" : "./bitrix/templates/_html/",
+    "src_path": "./src/",
+    "nm": "../../node_modules/",
+    "enable_browser_sync": true
+}
